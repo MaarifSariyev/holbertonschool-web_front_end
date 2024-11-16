@@ -1,0 +1,35 @@
+/* General Reset */
+body, html, .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid system */
+.row {
+    display: flex;
+    gap: 16px; /* Optional spacing */
+}
+
+[class*='col-'] {
+    flex: 1; /* Default flex for columns */
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Custom widths */
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}
