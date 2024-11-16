@@ -1,0 +1,58 @@
+/* General Reset */
+body, html, .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.section-services {
+    background-color: #f9f9f9;
+}
+
+.section-works {
+    background-color: #eef7ff;
+}
+
+.section-about-us {
+    background-color: #fdf2e9;
+}
+
+.section-latest-news {
+    background-color: #f1f5f9;
+}
+
+.section-testimonial {
+    background-color: #f7eef6;
+    text-align: center;
+    font-style: italic;
+}
+
+.section-contact {
+    background-color: #e6f7e6;
+}
+
+/* Grid system */
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+[class*='col-'] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
