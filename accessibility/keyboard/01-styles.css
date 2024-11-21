@@ -56,7 +56,7 @@ body {
 /* Hover State on Card */
 /* .card-work:hover .card-title {
   opacity: 1; /* Title becomes visible on hover */
-} */
+/* } */ */
 
 .card-work:hover .card-title a {
   opacity: 1; /* Link becomes visible on hover */
