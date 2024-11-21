@@ -39,7 +39,8 @@ body {
   color: #333;
   text-align: center;
   padding: 10px;
-  /* Removed opacity: 0 */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
 }
 
 /* Card Title Link */
