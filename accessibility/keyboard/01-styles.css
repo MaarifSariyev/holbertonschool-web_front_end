@@ -39,8 +39,7 @@ body {
   color: #333;
   text-align: center;
   padding: 10px;
-  opacity: 0; /* Initially invisible */
-  transition: opacity 0.3s ease;
+  /* Removed opacity: 0 */
 }
 
 /* Card Title Link */
@@ -62,6 +61,7 @@ body {
 .card-work:hover .card-title a {
   opacity: 1; /* Link becomes visible on hover */
   background-color: rgba(0, 0, 0, 0.7); /* Background color on hover */
+  height: 100%; /* Set the height to 100% on hover */
 }
 
 /* Focus State for Card Title Link */
