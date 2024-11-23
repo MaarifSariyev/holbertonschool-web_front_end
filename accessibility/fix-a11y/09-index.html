@@ -20,9 +20,14 @@
     </style>
   </head>
   <body>
+    <!-- Correctly converted <div class="header"> to <header> -->
     <header>
+      <div>
+        <div>
           <div><a href="#"><img src="img/logo.png" alt="Name of the logo"></a></div>
+          <!-- Correctly converted <div class='nav'> to <nav> -->
           <nav>
+            <div>
               <p><a href="#">Home</a></p>
               <p><a href="#">About</a></p>
               <p><a href="#">Services</a></p>
@@ -30,15 +35,17 @@
               <p><a href="#">Pricing</a></p>
               <p><a href="#">Pages</a></p>
               <p><a href="#">Contact</a></p>
+            </div>
           </nav>
         </div>
+      </div>
     </header>
 
     <!-- Added <main> wrapping content between <h1>Homepage</h1> and <div class="footer"> -->
     <main>
       <h1>Homepage</h1>
 
-      <section class="section">
+      <section>
         <div class="container">
           <div class="row">
             <div class="col-6">
@@ -51,7 +58,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section>
         <div class="container">
           <div class="row">
             <div class="col-6"><img class="img-fluid" src="about-img.png" alt="About image"></div>
@@ -64,7 +71,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section>
         <div class="container">
           <div class="row">
             <div class="col-7">
@@ -107,7 +114,7 @@
         </div>
       </div>
 
-      <section class="section">
+      <section>
         <div class="container">
           <div class="row">
             <div class="menu-content">
@@ -132,7 +139,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section>
         <div class="container">
           <div class="row">
             <div class="col-8">
@@ -160,7 +167,10 @@
         </div>
       </section>
     </main>
+
+    <!-- Correctly converted <div class="footer"> to <footer> -->
     <footer>
+      <div class="container">
         <div class="row">
           <div class="col-5">
             <div>
@@ -191,6 +201,7 @@
             </div>
           </div>
         </div>
+      </div>
     </footer>
   </body>
 </html>
