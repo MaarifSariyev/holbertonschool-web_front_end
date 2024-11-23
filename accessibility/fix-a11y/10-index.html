@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A fake website homepage">
+    <title>Homepage - A Fake Website</title>
+    <style>
+      /* Visually hide the label but keep it accessible for screen readers */
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Corrected: <div class='nav'> transformed into <ul> with <p> as <li> -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Homepage</h1>
+
+      <!-- The section with package-list needs to be transformed -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="single-services">
+                <a href="#">
+                  <h3>Web Design</h3>
+                </a>
+                <p>It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="single-services">
+                <a href="#">
+                  <h3>Web Development</h3>
+                </a>
+                <p>If you are an entrepreneur, you know that your success cannot depend on the opinions of others.</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="single-services">
+                <a href="#">
+                  <h3>Branding</h3>
+                </a>
+                <p>Our comprehensive branding strategies have helped many businesses build strong identities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corrected: <div class="package-list"> transformed into <ul> with each <span> as <li> -->
+        <div class="package-list">
+          <ul>
+            <li>Secure Online Transfer</li>
+            <li>Unlimited Styles for Interface</li>
+            <li>Reliable Customer Service</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <div>
+              <span>About Me</span><span>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</span>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="footer-widget">
+              <span>Newsletter</span>
+              <p>Stay updated with our latest trends</p>
+              <form action="#" method="post">
+                <label for="email" class="visually-hidden">Email Address</label>
+                <div class="input-group">
+                  <input class="form-control" type="email" name="email" id="email" autocomplete="email" required aria-required="true">
+                  <div class="input-group-btn"><button class="btn" type="submit">Validate</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="footer-widget">
+              <span>Follow Me</span>
+              <p>Let us be social</p>
+              <div>
+                <a href="#" aria-label="Facebook"><i class="facebook-icon"></i></a>
+                <a href="#" aria-label="Twitter"><i class="twitter-icon"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
