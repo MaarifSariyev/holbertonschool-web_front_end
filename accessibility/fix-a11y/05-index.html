@@ -4,6 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <title>Homepage - A Fake Website</title>
+    <style>
+      /* Visually hide the label but keep it accessible for screen readers */
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -152,7 +165,7 @@
               <h4>Newsletter</h4>
               <p>Stay updated with our latest trends</p>
               <form action="#" method="post">
-                <label for="email" class="visually-hidden">Email Address</label> <!-- Added label -->
+                <label for="email" class="visually-hidden">Email Address</label> <!-- Fixed label placement -->
                 <div class="input-group">
                   <input class="form-control" type="email" name="email" id="email" autocomplete="email" required aria-required="true"> <!-- Updated input field -->
                   <div class="input-group-btn"><button class="btn" type="submit">Validate</button></div> <!-- Changed a to button -->
