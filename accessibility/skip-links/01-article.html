@@ -3,32 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Article Page</title>
   <link rel="stylesheet" href="styles.css">
+  <title>Accessible Article</title>
 </head>
 <body>
-  <div class="container">
-    <article class="article">
+  <!-- Skip links -->
+  <nav aria-label="Skip links">
+    <ul class="off-screen">
+      <li><a href="#a11y-primary-nav" class="skip-link">Skip to primary navigation</a></li>
+      <li><a href="#a11y-main-content" class="skip-link">Skip to main content</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <nav id="a11y-primary-nav" class="navbar-menu" tabindex="-1">
+      <!-- Primary navigation items go here -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="a11y-main-content" tabindex="-1">
+    <article>
       <header>
-        <h1 class="article-title">The Beauty of Responsive Web Design</h1>
-        <p class="article-meta">Published on <time datetime="2024-11-23">November 23, 2024</time> by Maarif Sariyev</p>
+        <h1>Accessible Web Design</h1>
+        <p>Published on <time datetime="2024-11-23">November 23, 2024</time></p>
       </header>
-      <section class="article-content">
-        <p>
-          Responsive web design is more than just a trend—it's a necessity in today's digital world. With the rise of
-          mobile devices, users access websites from screens of all sizes, making it essential to provide a seamless experience.
-        </p>
-        <p>
-          Using CSS media queries, fluid grids, and flexible images, designers can create layouts that adapt gracefully to
-          any device. This ensures not only accessibility but also improves user engagement and retention.
-        </p>
+      <section>
+        <p>Creating accessible web designs ensures everyone can interact with your content, regardless of ability.</p>
       </section>
       <footer>
-        <p class="article-footer">
-          Want to learn more about responsive design? Check out our <a href="#">resources</a> section for tutorials and examples.
-        </p>
+        <p>Written by Web Accessibility Team</p>
       </footer>
     </article>
-  </div>
+  </main>
 </body>
 </html>
